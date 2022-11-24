@@ -1,7 +1,7 @@
 import axios from "axios";
 import { TweetData } from "../types/Tweet"
 
-const tweetDataUrl = "http://localhost:3100/tweets"
+const tweetDataUrl = "https://deploy-json-server.vercel.app/Tweets"
 
 export const POST = async (tweet: TweetData) => {
     const res = await axios.post(tweetDataUrl, tweet)
